@@ -4,34 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bot WhatsApp | ZyuroNation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: sans-serif; background: #121212; color: #fff; }
-    header { padding: 30px; background: linear-gradient(90deg, #4ca1af, #2c3e50); text-align: center; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 30px; max-width: 800px; margin: auto; }
-    ul { padding-left: 20px; }
-    .btn { display: inline-block; padding: 10px 20px; background: #4ca1af; color: white; border-radius: 5px; text-decoration: none; margin-top: 20px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background-image: url('https://wallpaperaccess.com/full/6200445.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px 15px;
+      animation: slideUp 1.5s ease-out;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #4ca1af;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #5cbcd2;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      nav a { display: block; margin: 10px 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bot WhatsApp</h1>
+    <h1>ZyuroNation</h1>
+    <p>Anime | Bot WhatsApp | Manga | Game</p>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html">Bot WhatsApp</a>
       <a href="bot.html">Bot WhatsApp</a>
       <a href="manga-game.html">Manga & Game</a>
     </nav>
   </header>
   <section>
-    <p>Bot ini dibangun menggunakan Baileys, dan memiliki fitur-fitur keren seperti:</p>
-    <ul>
-      <li>🌀 Auto-like & react status</li>
-      <li>📥 Unduh media (yt, ig, dll)</li>
-      <li>🧠 Chat AI & fitur toimg</li>
-      <li>🔐 Fitur owner-only & plugin modular</li>
-    </ul>
-    <a class="btn" href="https://wa.me/6281234567890" target="_blank">Coba Bot Sekarang</a>
+    <h2>Selamat datang!</h2>
+    <p>Saya Zyuro. Website ini berisi karya, bot, dan hobi saya.</p>
+    <a class="btn" href="bot.html">Lihat Bot WhatsApp</a>
   </section>
 </body>
 </html>

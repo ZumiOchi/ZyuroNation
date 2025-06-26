@@ -4,41 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Manga & Game | ZyuroNation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: sans-serif; background: #121212; color: #fff; }
-    header { padding: 30px; background: linear-gradient(90deg, #2c3e50, #4ca1af); text-align: center; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 30px; max-width: 800px; margin: auto; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 10px; }
-    a.link { color: #4ca1af; text-decoration: none; }
-    a.link:hover { text-decoration: underline; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background-image: url('https://wallpaperaccess.com/full/6200445.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px 15px;
+      animation: slideUp 1.5s ease-out;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #4ca1af;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #5cbcd2;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      nav a { display: block; margin: 10px 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Manga & Game</h1>
+    <h1>ZyuroNation</h1>
+    <p>Anime | Bot WhatsApp | Manga | Game</p>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html">Manga & Game</a>
       <a href="bot.html">Bot WhatsApp</a>
       <a href="manga-game.html">Manga & Game</a>
     </nav>
   </header>
   <section>
-    <h2>📖 Manga Favorit</h2>
-    <ul>
-      <li><a class="link" href="https://mangadex.org/title/65c8b7d0-ccfd-4999-935d-88ba2403eb4d" target="_blank">One Punch Man</a></li>
-      <li><a class="link" href="https://mangadex.org/title/72f12c25-d1d5-4bb4-888d-bc38fc24529d" target="_blank">Tokyo Revengers</a></li>
-      <li><a class="link" href="https://mangadex.org/title/4e70ea35-48a3-42fb-a62a-307ea0c6e4f2" target="_blank">Solo Leveling</a></li>
-    </ul>
-
-    <h2>🎮 Game Favorit</h2>
-    <ul>
-      <li>Minecraft</li>
-      <li>Genshin Impact</li>
-      <li>Valorant</li>
-    </ul>
+    <h2>Selamat datang!</h2>
+    <p>Saya Zyuro. Website ini berisi karya, bot, dan hobi saya.</p>
+    <a class="btn" href="bot.html">Lihat Bot WhatsApp</a>
   </section>
 </body>
 </html>
